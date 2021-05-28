@@ -1,0 +1,34 @@
+.slidebarComponent {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.slidebarComponent__title {
+  margin-left: 15px;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.slidebarComponent__icon {
+  margin: 0px 18px;
+  color: #555;
+}
+
+.slidebarComponent:hover {
+  background-color: lightgray;
+}
+
+.slidebarComponent.selected {
+  background-color: lightgray;
+}
+
+.slidebarComponent.selected > .slidebarComponent__title {
+  font-weight: 700;
+}
+
+.slidebarComponent.selected > .slidebarComponent__icon {
+  color: red;
+}

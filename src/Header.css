@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  padding-left: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffff;
+}
+
+.header__brand {
+  margin-left: 10px;
+  object-fit: contain;
+  height: 25px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* header icons */
+.header__icon {
+  color: #555;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+/* header left */
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+/* header middle */
+.header__middle {
+  display: flex;
+  width: 50%;
+}
+
+.header__middle > input {
+  border: 2px solid #bbbb;
+  flex: 1;
+  padding: 5px 10px;
+}
+
+.header__middle > input:focus {
+  outline: none !important;
+}
+
+.search {
+  border: 2px solid #bbbb;
+  background-color: #f7f7f7;
+  border-left: none;
+  color: #555;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+/* header right */
+.header__right {
+  display: flex;
+}
+
+.header__right__avatar {
+  width: 25px !important;
+  height: 25px !important;
+  margin: 5px 10px;
+  cursor: pointer;
+}

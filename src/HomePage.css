@@ -1,0 +1,23 @@
+.homepage {
+  width: 80vw;
+  overflow-x: hidden;
+  float: right;
+}
+
+.homepage > hr {
+  color: lightgray;
+}
+
+.homepage__topic {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.homepage__videos {
+  background-color: #eee;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}

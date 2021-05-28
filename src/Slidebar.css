@@ -1,0 +1,13 @@
+.slidebar {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.slidebar > hr {
+  height: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+}
