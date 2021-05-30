@@ -1,23 +1,28 @@
 .homepage {
-  width: 80vw;
-  overflow-x: hidden;
-  float: right;
+  background: lightgray;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
-.homepage > hr {
-  color: lightgray;
+.homepage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  padding-right: 25px;
+  white-space: nowrap;
 }
 
-.homepage__topic {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
-
-.homepage__videos {
-  background-color: #eee;
+.homepage > h2 {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+}
+
+.homepage-grid > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height: 230px;
 }

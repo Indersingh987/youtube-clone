@@ -1,4 +1,19 @@
-.app__page {
-  display: flex;
-  overflow-x: hidden;
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 1020px) {
+  .app {
+    grid-template-columns: 60px auto;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .app {
+    grid-template-columns: 0px auto;
+  }
 }

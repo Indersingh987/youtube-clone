@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{ useContext } from 'react'
 import './Header.css'
+import { context } from './GlobalVariable'
+
 import MenuIcon from '@material-ui/icons/Menu'
 import SearchIcon from '@material-ui/icons/Search';
 import MicIcon from '@material-ui/icons/Mic';
@@ -9,11 +11,12 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar'
 
 const Header = () => {
+    const { toggler,setToggler } = useContext(context);
    
     return (
         <div className='header'>
             <div className='header__left'>
-                <MenuIcon className='header__icon'/>
+                <MenuIcon onClick = {e=>setToggler(toggler ? false:true)} className='header__icon'/>
                 <img className='header__brand' src='/images/youTube-logo.jpg' alt='youTube' />
             </div>
             <div className='header__middle'>
