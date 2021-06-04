@@ -17,12 +17,5 @@
 
 .homepage > h2 {
   width: 100%;
-}
-
-.homepage-grid > div {
-  background-color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  height: 230px;
+  margin-left: 10px;
 }

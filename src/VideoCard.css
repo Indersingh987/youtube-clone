@@ -1,1 +1,41 @@
+.videoCard {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 30px;
+  height: 270px;
+  cursor: pointer;
+}
 
+.videoCard__img {
+  width: 100%;
+  height: 160px;
+  top: 0;
+}
+
+.videoCard__info {
+  display: flex;
+}
+
+.videoCard__text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.videoCard__text > h6 {
+  text-align: left;
+  font-size: 18px;
+}
+
+.videoCard__channel {
+  font-size: medium;
+  font-weight: 400;
+  color: gray;
+  text-align: left;
+}
+
+.videoCard__views {
+  font-size: medium;
+  font-weight: 400;
+  color: gray;
+  text-align: left;
+}

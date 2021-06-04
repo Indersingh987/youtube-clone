@@ -59,7 +59,7 @@ const Slidebar = ({ width }) => {
                     <hr />
                </aside>):toggler && (<aside className="sidebar-absolute">
                    <header className='sidebar-absolute-header'>
-                        <MenuIcon onClick={e=>setToggler(toggler?false:true)} className='sidebar-absolute-header__icon' />
+                        <MenuIcon onClick={e=>setToggler(toggler?setToggler(false):setToggler(true))} className='sidebar-absolute-header__icon' />
                         <img className='header__brand' src='/images/youTube-logo.jpg' alt='youTube' />  
                   
                    </header>
